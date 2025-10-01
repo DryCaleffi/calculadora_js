@@ -64,14 +64,3 @@ A função `togglePower()` controla o estado global da calculadora (`let ligada 
 * O botão de energia (`.power-button`) é ativado com uma regra CSS de alta especificidade (`pointer-events: auto;`), garantindo que ele **sempre possa ser clicado** para ligar a calculadora novamente.
 
 ---
-
-## 🗺️ Próximos Passos (To-Do)
-
-* [ ] Implementar funcionalidades científicas (seno, cosseno, tangente, logaritmo).
-* [ ] Adicionar persistência do histórico via `localStorage` para que os dados não se percam ao recarregar a página.
-* [ ] Implementar o cálculo da raiz quadrada (`√`) corretamente.
-* [ ] Melhorar a acessibilidade (ARIA labels).
-
----
-
-Feito com ❤️ por [Seu Nome ou Nome do Colaborador]
