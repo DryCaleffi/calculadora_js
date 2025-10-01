@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="calculadora"> <input type="text" id="visor" > 
+        <div class="botoes"> 
+            <button class="botao power-button" onclick="togglePower()">⏻</button> 
+            <button class="botao" onclick="limpar()">C</button> 
+            <button class="botao operador" onclick="adicionarValor('Math.sqrt(')">√</button>
+            <button class="botao operador" onclick="adicionarValor('^')">^</button> 
+            <button class="botao numero" onclick="adicionarValor('7')">7</button> 
+            <button class="botao numero" onclick="adicionarValor('8')">8</button> 
+            <button class="botao numero" onclick="adicionarValor('9')">9</button> 
+            <button class="botao operador" onclick="adicionarValor('*')">*</button> 
+            <button class="botao numero" onclick="adicionarValor('4')">4</button> 
+            <button class="botao numero" onclick="adicionarValor('5')">5</button> 
+            <button class="botao numero" onclick="adicionarValor('6')">6</button> 
+            <button class="botao operador" onclick="adicionarValor('+')">+</button> 
+            <button class="botao numero" onclick="adicionarValor('1')">1</button> 
+            <button class="botao numero" onclick="adicionarValor('2')">2</button> 
+            <button class="botao numero" onclick="adicionarValor('3')">3</button> 
+            <button class="botao operador" onclick="adicionarValor('-')">-</button> 
+            <button class="botao numero" onclick="adicionarValor('0')">0</button> 
+            <button class="botao" onclick="adicionarValor(',')">,</button> 
+            <button class="botao operador" onclick="adicionarValor('%')">%</button> 
+            <button class="botao operador" onclick="adicionarValor('/')">/</button> 
+            <button class="botao operador" onclick="adicionarValor('(')">(</button> 
+            <button class="botao operador" onclick="adicionarValor(')')">)</button>
+            <button class="botao igual" onclick="calcular()">=</button>
+     
+      <div class="extras">
+                <button class="botao" onclick="toggleHistorico()">Histórico</button>
+                <button class="botao" onclick="limparHistorico()">Limpar Histórico</button>
+            </div>
+        </div>
+
+        <div id="historico-container" class="oculto">
+            <h2>Histórico</h2>
+            <ul id="historico-lista"></ul>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
